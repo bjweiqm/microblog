@@ -5,9 +5,10 @@ from app import app
 
 
 @app.route('/')
+@app.route('/index/')
 def index():
 
-    return 'hello world'
+    return 'hello world!'
 
 
 if __name__ == '__main__':

@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # encoding: utf-8
-from flask import render_template()
+from flask import render_template
 from app import app
 
 
@@ -9,7 +9,7 @@ from app import app
 def index():
 
     user = { 'nickname': 'Miguel' } # fake user
-    return 'hello world!'
+    return render_template('index.html', title='Home', user=user)
 
 
 if __name__ == '__main__':
